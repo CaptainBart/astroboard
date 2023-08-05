@@ -25,11 +25,14 @@ android {
     useLibrary 'android.test.mock'
 
     defaultConfig {
+        applicationId "nl.beltoforion.astroboard.inputmethod.latin"
+        namespace "com.android.inputmethod.latin"
+        versionCode 30
+        versionName "0.3.0"
+
         minSdkVersion 21
         targetSdkVersion 33
-        versionName "1.0"
-
-        applicationId 'com.android.inputmethod.latin'
+        
         testApplicationId 'com.android.inputmethod.latin.tests'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = false
@@ -50,6 +53,7 @@ android {
         release {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.flags'
         }
+        archivesBaseName = "astroboard_" + defaultConfig.versionName
     }
 
     compileOptions {
@@ -89,8 +93,6 @@ android {
 }
 
 repositories {
-    maven { url "../../../prebuilts/fullsdk-darwin/extras/android/m2repository" }
-    maven { url "../../../prebuilts/fullsdk-linux/extras/android/m2repository" }
     mavenCentral()
     google()
 }
