@@ -2,6 +2,9 @@
 .externalNativeBuild/
 .gradle/
 .idea/
+local.properties
 LatinIME.iml
 build/
+release/
+.cxx/
 local.properties

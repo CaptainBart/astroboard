@@ -1,10 +1,10 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0-beta03'
+        classpath 'com.android.tools.build:gradle:7.4.0'
     }
 }
 
@@ -13,7 +13,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 33
     buildToolsVersion '34.0.0'
-
+    ndkVersion '21.4.7075529'
+    
     // Required if using classes in android.test.runner
     useLibrary 'android.test.runner'
 
@@ -92,7 +93,6 @@ repositories {
     maven { url "../../../prebuilts/fullsdk-linux/extras/android/m2repository" }
     mavenCentral()
     google()
-    jcenter()
 }
 
 dependencies {
