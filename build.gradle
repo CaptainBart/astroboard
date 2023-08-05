@@ -13,7 +13,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 33
     buildToolsVersion '34.0.0'
-    ndkVersion '21.4.7075529'
+    ndkVersion '23.2.8568313'
     
     // Required if using classes in android.test.runner
     useLibrary 'android.test.runner'
@@ -54,11 +54,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.flags'
         }
         archivesBaseName = "astroboard_" + defaultConfig.versionName
-    }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     flavorDimensions "default"
