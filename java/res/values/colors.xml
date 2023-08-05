@@ -56,11 +56,15 @@
     <color name="gesture_floating_preview_color_lxx_dark">#E621272B</color>
     <color name="emoji_tab_page_indicator_background_lxx_dark">#21272B</color>
     <!-- Color resources for setup wizard and tutorial -->
-    <color name="setup_background">#FFEBEBEB</color>
-    <color name="setup_text_dark">#FF707070</color>
-    <color name="setup_text_action">@android:color/holo_blue_light</color>
-    <color name="setup_step_background">@android:color/background_light</color>
+    <color name="setup_background">#000000</color>
+    <color name="setup_text_dark">#FF0000</color>
+    <color name="setup_text_action">#FF0000</color>
+    <color name="setup_step_background">#330000</color>
     <color name="setup_welcome_video_margin_color">#FFCCCCCC</color>
     <!-- Accent color for the notification. We need to match this to the OS build -->
-    <color name="notification_accent_color">#FF607D8B</color>
+    <color name="notification_accent_color">#FF0000</color>
+
+    <color name="key_text_color_astronomy">#660000</color>
+    <color name="key_hint_letter_color_astronomy">#660000</color>
+    <color name="accent_color_astronomy">#660000</color>
 </resources>

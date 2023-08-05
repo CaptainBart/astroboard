@@ -50,7 +50,7 @@ public final class SetupWizardActivity extends Activity implements View.OnClickL
 
     // For debugging purpose.
     private static final boolean FORCE_TO_SHOW_WELCOME_SCREEN = false;
-    private static final boolean ENABLE_WELCOME_VIDEO = true;
+    private static final boolean ENABLE_WELCOME_VIDEO = false;
 
     private InputMethodManager mImm;
 
@@ -414,14 +414,7 @@ public final class SetupWizardActivity extends Activity implements View.OnClickL
         final boolean welcomeScreen = (mStepNumber == STEP_WELCOME);
         mWelcomeScreen.setVisibility(welcomeScreen ? View.VISIBLE : View.GONE);
         mSetupScreen.setVisibility(welcomeScreen ? View.GONE : View.VISIBLE);
-        if (welcomeScreen) {
-            if (ENABLE_WELCOME_VIDEO) {
-                showAndStartWelcomeVideo();
-            } else {
-                hideWelcomeVideoAndShowWelcomeImage();
-            }
-            return;
-        }
+
         hideAndStopWelcomeVideo();
         final boolean isStepActionAlreadyDone = mStepNumber < determineSetupStepNumber();
         mSetupStepGroup.enableStep(mStepNumber, isStepActionAlreadyDone);
