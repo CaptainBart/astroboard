@@ -30,6 +30,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.NinePatchDrawable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import com.android.inputmethod.keyboard.internal.KeyDrawParams;
@@ -58,6 +59,7 @@ import javax.annotation.Nullable;
  * @attr ref R.styleable#KeyboardView_keyShiftedLetterHintPadding
  * @attr ref R.styleable#KeyboardView_keyTextShadowRadius
  * @attr ref R.styleable#KeyboardView_verticalCorrection
+ * @attr ref R.styleable#KeyboardView_customizeIconColors
  * @attr ref R.styleable#Keyboard_Key_keyTypeface
  * @attr ref R.styleable#Keyboard_Key_keyLetterSize
  * @attr ref R.styleable#Keyboard_Key_keyLabelSize
@@ -91,6 +93,7 @@ public class KeyboardView extends View {
     private final float mKeyShiftedLetterHintPadding;
     private final float mKeyTextShadowRadius;
     private final float mVerticalCorrection;
+    private final boolean mCustomizeIconColors;
     private final Drawable mKeyBackground;
     private final Drawable mFunctionalKeyBackground;
     private final Drawable mSpacebarBackground;
@@ -158,6 +161,7 @@ public class KeyboardView extends View {
                 R.styleable.KeyboardView_keyTextShadowRadius, KET_TEXT_SHADOW_RADIUS_DISABLED);
         mVerticalCorrection = keyboardViewAttr.getDimension(
                 R.styleable.KeyboardView_verticalCorrection, 0.0f);
+        mCustomizeIconColors = keyboardViewAttr.getBoolean(R.styleable.KeyboardView_customizeIconColors, false);
         keyboardViewAttr.recycle();
 
         final TypedArray keyAttr = context.obtainStyledAttributes(attrs,
@@ -167,6 +171,8 @@ public class KeyboardView extends View {
         keyAttr.recycle();
 
         mPaint.setAntiAlias(true);
+
+        Log.w("", "WHAAA: " + mCustomizeIconColors);
     }
 
     @Nullable
@@ -370,6 +376,11 @@ public class KeyboardView extends View {
             bgX = -padding.left;
             bgY = -padding.top;
         }
+
+        if (key.getBackgroundType() == Key.BACKGROUND_TYPE_SPACEBAR) {
+            this.setIconColorFilter(background);
+        }
+
         background.setBounds(0, 0, bgWidth, bgHeight);
         canvas.translate(bgX, bgY);
         background.draw(canvas);
@@ -497,11 +508,21 @@ public class KeyboardView extends View {
                 iconY = (keyHeight - iconHeight) / 2; // Align vertically center.
             }
             final int iconX = (keyWidth - iconWidth) / 2; // Align horizontally center.
+
+            this.setIconColorFilter(icon);
             drawIcon(canvas, icon, iconX, iconY, iconWidth, iconHeight);
         }
 
         if (key.hasPopupHint() && key.getMoreKeys() != null) {
             drawKeyPopupHint(key, canvas, paint, params);
+        }
+    }
+
+    public void setIconColorFilter(Drawable icon) {
+        if (mCustomizeIconColors) {                
+            icon.setColorFilter(mKeyVisualAttributes.mTextFilter);
+        } else {
+            icon.clearColorFilter();
         }
     }
 

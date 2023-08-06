@@ -77,6 +77,7 @@
 
         <!-- Amount to offset the touch Y coordinate by, for bias correction. -->
         <attr name="verticalCorrection" format="dimension" />
+        <attr name="customizeIconColors" format="boolean" />
     </declare-styleable>
 
     <declare-styleable name="MainKeyboardView">
@@ -241,6 +242,8 @@
             <enum name="LXXLight" value="3" />
             <enum name="LXXDark" value="4" />
             <enum name="You" value="6" />
+            <enum name="LXXDarkAmoled" value="80" />
+            <enum name="LXXDarkAstronomy" value="81" />
         </attr>
         <!-- Touch position correction -->
         <attr name="touchPositionCorrectionData" format="reference" />

@@ -1999,12 +1999,16 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         // TODO: Revisit here to reorganize the settings. Probably we can/should use different
         // strategy once the implementation of
         // {@link InputMethodManager#shouldOfferSwitchingToNextInputMethod} is defined well.
-        final boolean fallbackValue = mSettings.getCurrent().isLanguageSwitchKeyEnabled();
+        final boolean settingValue = mSettings.getCurrent().isLanguageSwitchKeyEnabled();
+        if(!settingValue) {
+            return false;
+        }
+
         final IBinder token = getWindow().getWindow().getAttributes().token;
         if (token == null) {
-            return fallbackValue;
+            return true;
         }
-        return mRichImm.shouldOfferSwitchingToNextInputMethod(token, fallbackValue);
+        return mRichImm.shouldOfferSwitchingToNextInputMethod(token, true);
     }
 
     private void setNavigationBarVisibility(final boolean visible) {

@@ -16,9 +16,14 @@
 
 package com.android.inputmethod.keyboard.internal;
 
+import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
+import android.graphics.ColorFilter;
 import android.graphics.Typeface;
 import android.util.SparseIntArray;
+
+import androidx.core.graphics.BlendModeColorFilterCompat;
+import androidx.core.graphics.BlendModeCompat;
 
 import com.android.inputmethod.latin.R;
 import com.android.inputmethod.latin.utils.ResourceUtils;
@@ -53,6 +58,9 @@ public final class KeyVisualAttributes {
     public final float mHintLabelVerticalAdjustment;
     public final float mLabelOffCenterRatio;
     public final float mHintLabelOffCenterRatio;
+
+    public final ColorFilter mTextFilter;
+    public ColorStateList keyStateList;
 
     private static final int[] VISUAL_ATTRIBUTE_IDS = {
         R.styleable.Keyboard_Key_keyTypeface,
@@ -144,5 +152,7 @@ public final class KeyVisualAttributes {
                 R.styleable.Keyboard_Key_keyLabelOffCenterRatio, 0.0f);
         mHintLabelOffCenterRatio = ResourceUtils.getFraction(keyAttr,
                 R.styleable.Keyboard_Key_keyHintLabelOffCenterRatio, 0.0f);
+
+        mTextFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(mTextColor, BlendModeCompat.SRC_ATOP);
     }
 }

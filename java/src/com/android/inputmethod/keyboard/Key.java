@@ -826,6 +826,10 @@ public class Key implements Comparable<Key> {
         return iconSet.getIconDrawable(getIconId());
     }
 
+    public int getBackgroundType() {
+        return mBackgroundType;
+    }
+
     /**
      * Gets the width of the key in pixels, excluding the gap.
      * @return The width of the key in pixels, excluding the gap.
