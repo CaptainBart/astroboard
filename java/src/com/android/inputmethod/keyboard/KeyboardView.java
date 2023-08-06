@@ -30,7 +30,6 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.NinePatchDrawable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 import com.android.inputmethod.keyboard.internal.KeyDrawParams;
@@ -171,8 +170,6 @@ public class KeyboardView extends View {
         keyAttr.recycle();
 
         mPaint.setAntiAlias(true);
-
-        Log.w("", "WHAAA: " + mCustomizeIconColors);
     }
 
     @Nullable
