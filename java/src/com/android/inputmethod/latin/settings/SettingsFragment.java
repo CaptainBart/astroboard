@@ -62,6 +62,9 @@ public final class SettingsFragment extends InputMethodSettingsFragment {
             final Preference gesturePreference = findPreference(Settings.SCREEN_GESTURE);
             preferenceScreen.removePreference(gesturePreference);
         }
+
+        final Preference correctionPreference = findPreference("screen_correction");
+        preferenceScreen.removePreference(correctionPreference);
     }
 
     @Override
