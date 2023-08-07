@@ -43,7 +43,7 @@ public final class KeyboardTheme implements Comparable<KeyboardTheme> {
     public static final int THEME_ID_YOU = 6;
     public static final int THEME_ID_LXX_DARK_AMOLED = 80;
     public static final int THEME_ID_LXX_DARK_ASTRONOMY = 81;
-    public static final int DEFAULT_THEME_ID = THEME_ID_LXX_DARK_AMOLED;
+    public static final int DEFAULT_THEME_ID = THEME_ID_LXX_DARK_ASTRONOMY;
 
     private static KeyboardTheme[] AVAILABLE_KEYBOARD_THEMES;
 
@@ -63,8 +63,7 @@ public final class KeyboardTheme implements Comparable<KeyboardTheme> {
                 // This has never been selected as default theme.
                 VERSION_CODES.BASE),
         new KeyboardTheme(THEME_ID_LXX_DARK_ASTRONOMY, "LXXDarkAstronomy", R.style.KeyboardTheme_LXX_Dark_Astronomy,
-                // This has never been selected as default theme.
-                VERSION_CODES.BASE),
+                VERSION_CODES.LOLLIPOP),
     };
 
     static {
@@ -120,12 +119,6 @@ public final class KeyboardTheme implements Comparable<KeyboardTheme> {
     /* package private for testing */
     static KeyboardTheme getDefaultKeyboardTheme(final SharedPreferences prefs,
             final int sdkVersion, final KeyboardTheme[] availableThemeArray) {
-        // TODO: This search algorithm isn't optimal if there are many themes.
-        for (final KeyboardTheme theme : availableThemeArray) {
-            if (sdkVersion >= theme.mMinApiVersion) {
-                return theme;
-            }
-        }
         return searchKeyboardThemeById(DEFAULT_THEME_ID, availableThemeArray);
     }
 
@@ -167,6 +160,7 @@ public final class KeyboardTheme implements Comparable<KeyboardTheme> {
     /* package private for testing */
     static KeyboardTheme getKeyboardTheme(final Context context, final int sdkVersion) {
         int themeId = getSelectedKeyboardThemeId(context);
+        Log.w(TAG, "Selected theme Id: " + themeId);
         if (THEME_ID_AUTO_DARK == themeId) {
             Configuration cfg = context.getResources().getConfiguration();
             int nightMode = cfg.uiMode & Configuration.UI_MODE_NIGHT_MASK;
@@ -192,6 +186,7 @@ public final class KeyboardTheme implements Comparable<KeyboardTheme> {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         final KeyboardTheme[] availableThemeArray = getAvailableThemeArray(context);
         final String lxxThemeIdString = prefs.getString(LXX_KEYBOARD_THEME_KEY, null);
+        Log.w(TAG, "Selected lxx thme id: " + lxxThemeIdString);
         if (lxxThemeIdString != null) {
             try {
                 return Integer.parseInt(lxxThemeIdString);
