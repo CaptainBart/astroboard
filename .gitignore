@@ -7,3 +7,4 @@ LatinIME.iml
 build/
 release/
 .cxx/
+android-keys.jks
