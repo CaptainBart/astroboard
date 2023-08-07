@@ -46,5 +46,10 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: APK
-          path: build/outputs/apk/debug/*.apk
+          path: build/outputs/apk/release/*.apk
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Bundle
+          path: build/outputs/bundle/release/*.aab
 
