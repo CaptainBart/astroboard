@@ -46,10 +46,12 @@
                     latin:keyWidth="42.0%p" />
             </default>
         </switch>
+        <case latin:emojiKeyEnabled="true">
         <include
             latin:keyXPos="-9.0%p"
             latin:keyWidth="9.0%p"
             latin:backgroundType="functional"
             latin:keyboardLayout="@xml/key_emoji" />
+        </case>
     </Row>
 </merge>

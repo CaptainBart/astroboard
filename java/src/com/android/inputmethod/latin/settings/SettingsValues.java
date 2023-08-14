@@ -69,6 +69,7 @@ public class SettingsValues {
     public final boolean mShowsVoiceInputKey;
     public final boolean mIncludesOtherImesInLanguageSwitchList;
     public final boolean mShowsLanguageSwitchKey;
+    public final boolean mShowsEmojiKey;
     public final boolean mSpaceForLangChange;
     public final boolean mUseContactsDict;
     public final boolean mUsePersonalizedDicts;
@@ -144,6 +145,7 @@ public class SettingsValues {
                 ? prefs.getBoolean(Settings.PREF_INCLUDE_OTHER_IMES_IN_LANGUAGE_SWITCH_LIST, false)
                 : true /* forcibly */;
         mShowsLanguageSwitchKey = prefs.getBoolean(Settings.PREF_SHOW_LANGUAGE_SWITCH_KEY, false);
+        mShowsEmojiKey = prefs.getBoolean(Settings.PREF_SHOW_EMOJI_KEY, false);
         mSpaceForLangChange = prefs.getBoolean(Settings.PREF_SPACE_TO_CHANGE_LANG, false);
         mUseContactsDict = prefs.getBoolean(Settings.PREF_KEY_USE_CONTACTS_DICT, false);
         mUsePersonalizedDicts = prefs.getBoolean(Settings.PREF_KEY_USE_PERSONALIZED_DICTS, true);

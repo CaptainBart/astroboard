@@ -119,6 +119,7 @@ public final class KeyboardLayoutSet {
         boolean mVoiceInputKeyEnabled;
         boolean mNoSettingsKey;
         boolean mLanguageSwitchKeyEnabled;
+        boolean mEmojiKeyEnabled;
         RichInputMethodSubtype mSubtype;
         boolean mIsSpellChecker;
         int mKeyboardWidth;
@@ -324,6 +325,11 @@ public final class KeyboardLayoutSet {
 
         public Builder setLanguageSwitchKeyEnabled(final boolean enabled) {
             mParams.mLanguageSwitchKeyEnabled = enabled;
+            return this;
+        }
+
+        public Builder setEmojiKeyEnabled(final boolean enabled) {
+            mParams.mEmojiKeyEnabled = enabled;
             return this;
         }
 

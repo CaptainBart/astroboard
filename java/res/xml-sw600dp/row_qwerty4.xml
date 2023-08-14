@@ -45,8 +45,11 @@
                     latin:keyWidth="24.0%p" />
                 <include
                     latin:keyboardLayout="@xml/key_period" />
-                <include
-                    latin:keyboardLayout="@xml/key_emoji" />
+
+                <case latin:emojiKeyEnabled="true">
+                    <include
+                        latin:keyboardLayout="@xml/key_emoji" />
+                </case>
             </Row>
         </case>
         <default>
@@ -66,8 +69,11 @@
                     latin:backgroundType="normal" />
                 <include
                     latin:keyboardLayout="@xml/key_period" />
-                <include
-                    latin:keyboardLayout="@xml/key_emoji" />
+                    
+                <case latin:emojiKeyEnabled="true">
+                    <include
+                        latin:keyboardLayout="@xml/key_emoji" />
+                </case>
             </Row>
         </default>
     </switch>

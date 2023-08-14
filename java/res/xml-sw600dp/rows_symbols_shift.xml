@@ -71,7 +71,10 @@
             latin:keyWidth="10%p" />
         <include
             latin:keyboardLayout="@xml/row_symbols_shift4" />
-        <include
-            latin:keyboardLayout="@xml/key_emoji" />
+
+        <case latin:emojiKeyEnabled="true">
+            <include
+                latin:keyboardLayout="@xml/key_emoji" />
+        </case>
     </Row>
 </merge>
