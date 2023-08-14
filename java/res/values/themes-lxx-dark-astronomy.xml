@@ -34,7 +34,7 @@
 
     <style
         name="Keyboard.LXX_Dark_Astronomy"
-        parent="Keyboard.LXX_Dark_Amoled"
+        parent="Keyboard"
     >
         <!-- This should be aligned with KeyboardTheme.THEME_ID_* -->
         <item name="themeId">LXXDarkAstronomy</item>
@@ -62,27 +62,74 @@
 
     <style
         name="MainKeyboardView.LXX_Dark_Astronomy"
-        parent="KeyboardView.LXX_Dark_Astronomy"
+        parent="MainKeyboardView.LXX_Dark_Amoled"
     >
+        <item name="keyTextColor">@color/key_text_color_astronomy</item>
+        <item name="keyTextInactivatedColor">@color/key_text_color_astronomy</item>
+        <item name="functionalTextColor">@color/key_text_color_astronomy</item>
+        <item name="keyHintLetterColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyHintLabelColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyShiftedLetterHintInactivatedColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyShiftedLetterHintActivatedColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyPreviewTextColor">@color/key_text_color_astronomy</item>
+
+        <item name="keyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
+        <item name="functionalKeyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
+        <item name="customizeIconColors">true</item>
     </style>
 
     <style
         name="EmojiPalettesView.LXX_Dark_Astronomy"
-        parent="MainKeyboardView.LXX_Dark_Astronomy"
+        parent="EmojiPalettesView.LXX_Dark_Amoled"
     >
-        <item name="categoryPageIndicatorBackground">@color/background_amoled_dark</item>
+        <item name="keyTextColor">@color/key_text_color_astronomy</item>
+        <item name="keyTextInactivatedColor">@color/key_text_color_astronomy</item>
+        <item name="functionalTextColor">@color/key_text_color_astronomy</item>
+        <item name="keyHintLetterColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyHintLabelColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyShiftedLetterHintInactivatedColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyShiftedLetterHintActivatedColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyPreviewTextColor">@color/key_text_color_astronomy</item>
+
+        <item name="keyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
+        <item name="functionalKeyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
+        <item name="customizeIconColors">true</item>
     </style>
 
     <style
         name="MoreKeysKeyboardView.LXX_Dark_Astronomy"
-        parent="KeyboardView.LXX_Dark_Astronomy"
+        parent="MoreKeysKeyboardView.LXX_Dark_Amoled"
     >
+        <item name="keyTextColor">@color/key_text_color_astronomy</item>
+        <item name="keyTextInactivatedColor">@color/key_text_color_astronomy</item>
+        <item name="functionalTextColor">@color/key_text_color_astronomy</item>
+        <item name="keyHintLetterColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyHintLabelColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyShiftedLetterHintInactivatedColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyShiftedLetterHintActivatedColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyPreviewTextColor">@color/key_text_color_astronomy</item>
+
+        <item name="keyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
+        <item name="functionalKeyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
+        <item name="customizeIconColors">true</item>
     </style>
 
     <style
         name="SuggestionStripView.LXX_Dark_Astronomy"
-        parent="KeyboardView.LXX_Dark_Astronomy"
+        parent="SuggestionStripView.LXX_Dark_Amoled"
     >
+        <item name="keyTextColor">@color/key_text_color_astronomy</item>
+        <item name="keyTextInactivatedColor">@color/key_text_color_astronomy</item>
+        <item name="functionalTextColor">@color/key_text_color_astronomy</item>
+        <item name="keyHintLetterColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyHintLabelColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyShiftedLetterHintInactivatedColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyShiftedLetterHintActivatedColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyPreviewTextColor">@color/key_text_color_astronomy</item>
+
+        <item name="keyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
+        <item name="functionalKeyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
+        <item name="customizeIconColors">true</item>
     </style>
 
 </resources>
