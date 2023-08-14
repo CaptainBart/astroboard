@@ -75,6 +75,7 @@
 
         <item name="keyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
+        <item name="keyPreviewBackground">@drawable/keyboard_key_feedback_lxx_dark_astronomy</item>
         <item name="customizeIconColors">true</item>
     </style>
 
@@ -93,6 +94,7 @@
 
         <item name="keyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
+        <item name="keyPreviewBackground">@drawable/keyboard_key_feedback_lxx_dark_astronomy</item>
         <item name="customizeIconColors">true</item>
     </style>
 
@@ -111,6 +113,7 @@
 
         <item name="keyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
+        <item name="keyPreviewBackground">@drawable/keyboard_key_feedback_lxx_dark_astronomy</item>
         <item name="customizeIconColors">true</item>
     </style>
 
@@ -129,6 +132,7 @@
 
         <item name="keyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
+        <item name="keyPreviewBackground">@drawable/keyboard_key_feedback_lxx_dark_astronomy</item>
         <item name="customizeIconColors">true</item>
     </style>
 
