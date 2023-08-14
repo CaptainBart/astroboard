@@ -72,7 +72,8 @@
     <color name="background_amoled_dark">#1A1A1A</color>
     
     <color name="key_text_color_astronomy">#660000</color>
-    <color name="key_hint_letter_color_astronomy">#660000</color>
+    <color name="key_hint_letter_color_astronomy">#440000</color>
+    <color name="key_text_inactive_color_astronomy">#440000</color>
     <color name="accent_color_astronomy">#660000</color>
     <color name="key_background_pressed_lxx_dark_astronomy">#110000</color>
     <color name="action_key_background_lxx_dark_astronomy">#000000</color>

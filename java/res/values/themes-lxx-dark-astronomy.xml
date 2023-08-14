@@ -50,11 +50,12 @@
         <item name="keyTextInactivatedColor">@color/key_text_color_astronomy</item>
         <item name="functionalTextColor">@color/key_text_color_astronomy</item>
         <item name="keyHintLetterColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyHintLabelColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyShiftedLetterHintInactivatedColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyShiftedLetterHintActivatedColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyHintLabelColor">@color/key_text_inactive_color_astronomy</item>
+        <item name="keyShiftedLetterHintInactivatedColor">@color/key_text_inactive_color_astronomy</item>
+        <item name="keyShiftedLetterHintActivatedColor">@color/key_text_color_astronomy</item>
         <item name="keyPreviewTextColor">@color/key_text_color_astronomy</item>
 
+        <item name="languageOnSpacebarTextColor">@color/key_text_color_astronomy</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="customizeIconColors">true</item>
@@ -68,11 +69,12 @@
         <item name="keyTextInactivatedColor">@color/key_text_color_astronomy</item>
         <item name="functionalTextColor">@color/key_text_color_astronomy</item>
         <item name="keyHintLetterColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyHintLabelColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyShiftedLetterHintInactivatedColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyShiftedLetterHintActivatedColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyHintLabelColor">@color/key_text_inactive_color_astronomy</item>
+        <item name="keyShiftedLetterHintInactivatedColor">@color/key_text_inactive_color_astronomy</item>
+        <item name="keyShiftedLetterHintActivatedColor">@color/key_text_color_astronomy</item>
         <item name="keyPreviewTextColor">@color/key_text_color_astronomy</item>
 
+        <item name="languageOnSpacebarTextColor">@color/key_text_color_astronomy</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="keyPreviewBackground">@drawable/keyboard_key_feedback_lxx_dark_astronomy</item>
@@ -87,11 +89,12 @@
         <item name="keyTextInactivatedColor">@color/key_text_color_astronomy</item>
         <item name="functionalTextColor">@color/key_text_color_astronomy</item>
         <item name="keyHintLetterColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyHintLabelColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyShiftedLetterHintInactivatedColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyShiftedLetterHintActivatedColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyHintLabelColor">@color/key_text_inactive_color_astronomy</item>
+        <item name="keyShiftedLetterHintInactivatedColor">@color/key_text_inactive_color_astronomy</item>
+        <item name="keyShiftedLetterHintActivatedColor">@color/key_text_color_astronomy</item>
         <item name="keyPreviewTextColor">@color/key_text_color_astronomy</item>
 
+        <item name="languageOnSpacebarTextColor">@color/key_text_color_astronomy</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="keyPreviewBackground">@drawable/keyboard_key_feedback_lxx_dark_astronomy</item>
@@ -106,11 +109,12 @@
         <item name="keyTextInactivatedColor">@color/key_text_color_astronomy</item>
         <item name="functionalTextColor">@color/key_text_color_astronomy</item>
         <item name="keyHintLetterColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyHintLabelColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyShiftedLetterHintInactivatedColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyShiftedLetterHintActivatedColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyHintLabelColor">@color/key_text_inactive_color_astronomy</item>
+        <item name="keyShiftedLetterHintInactivatedColor">@color/key_text_inactive_color_astronomy</item>
+        <item name="keyShiftedLetterHintActivatedColor">@color/key_text_color_astronomy</item>
         <item name="keyPreviewTextColor">@color/key_text_color_astronomy</item>
 
+        <item name="languageOnSpacebarTextColor">@color/key_text_color_astronomy</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="keyPreviewBackground">@drawable/keyboard_key_feedback_lxx_dark_astronomy</item>
@@ -125,11 +129,12 @@
         <item name="keyTextInactivatedColor">@color/key_text_color_astronomy</item>
         <item name="functionalTextColor">@color/key_text_color_astronomy</item>
         <item name="keyHintLetterColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyHintLabelColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyShiftedLetterHintInactivatedColor">@color/key_hint_letter_color_astronomy</item>
-        <item name="keyShiftedLetterHintActivatedColor">@color/key_hint_letter_color_astronomy</item>
+        <item name="keyHintLabelColor">@color/key_text_inactive_color_astronomy</item>
+        <item name="keyShiftedLetterHintInactivatedColor">@color/key_text_inactive_color_astronomy</item>
+        <item name="keyShiftedLetterHintActivatedColor">@color/key_text_color_astronomy</item>
         <item name="keyPreviewTextColor">@color/key_text_color_astronomy</item>
 
+        <item name="languageOnSpacebarTextColor">@color/key_text_color_astronomy</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_lxx_dark_astronomy</item>
         <item name="keyPreviewBackground">@drawable/keyboard_key_feedback_lxx_dark_astronomy</item>
