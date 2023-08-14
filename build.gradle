@@ -27,8 +27,8 @@ android {
     defaultConfig {
         applicationId "nl.beltoforion.astroboard.inputmethod.latin"
         namespace "com.android.inputmethod.latin"
-        versionCode 33
-        versionName "0.3.3"
+        versionCode 34
+        versionName "0.3.4"
 
         minSdkVersion 21
         targetSdkVersion 33
