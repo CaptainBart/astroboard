@@ -4,7 +4,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.0'
+        classpath 'com.android.tools.build:gradle:8.7.1'
     }
 }
 
@@ -81,19 +81,18 @@ android {
         }
     }
 
-    lintOptions {
-        checkReleaseBuilds false
-        abortOnError false
-    }
-
-    aaptOptions {
-        noCompress 'dict'
-    }
 
     externalNativeBuild {
         ndkBuild {
             path 'native/jni/Android.mk'
         }
+    }
+    androidResources {
+        noCompress 'dict'
+    }
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
     }
 }
 
