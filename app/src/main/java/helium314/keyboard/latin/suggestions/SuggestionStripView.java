@@ -126,7 +126,7 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
         }
 
         public void showSuggestionsStrip() {
-            mSuggestionsStrip.setVisibility(VISIBLE);
+            mSuggestionsStrip.setVisibility(GONE);
         }
 
     }
