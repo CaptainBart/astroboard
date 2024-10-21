@@ -41,6 +41,7 @@ private constructor(val themeId: Int, @JvmField val mStyleId: Int) {
         const val THEME_DARK = "dark"
         const val THEME_DARKER = "darker"
         const val THEME_BLACK = "black"
+        const val THEME_ASTRONOMY = "astronomy"
         const val THEME_DYNAMIC = "dynamic"
         const val THEME_USER = "user"
         const val THEME_USER_NIGHT = "user_night"
@@ -56,12 +57,12 @@ private constructor(val themeId: Int, @JvmField val mStyleId: Int) {
         const val THEME_VIOLETTE = "violette"
         val COLORS = listOfNotNull(
             THEME_LIGHT, if (Build.VERSION.SDK_INT < VERSION_CODES.S) null else THEME_DYNAMIC, THEME_HOLO_WHITE, THEME_DARK,
-            THEME_DARKER, THEME_BLACK, THEME_BLUE_GRAY, THEME_BROWN, THEME_CHOCOLATE, THEME_CLOUDY, THEME_FOREST,
+            THEME_DARKER, THEME_BLACK, THEME_ASTRONOMY, THEME_BLUE_GRAY, THEME_BROWN, THEME_CHOCOLATE, THEME_CLOUDY, THEME_FOREST,
             THEME_INDIGO, THEME_PINK, THEME_OCEAN, THEME_SAND, THEME_VIOLETTE, THEME_USER
         )
         val COLORS_DARK = listOfNotNull(
             THEME_HOLO_WHITE, THEME_DARK, if (Build.VERSION.SDK_INT < VERSION_CODES.S) null else THEME_DYNAMIC,
-            THEME_DARKER, THEME_BLACK, THEME_CHOCOLATE, THEME_CLOUDY, THEME_FOREST, THEME_OCEAN, THEME_VIOLETTE, THEME_USER_NIGHT
+            THEME_DARKER, THEME_BLACK, THEME_ASTRONOMY, THEME_CHOCOLATE, THEME_CLOUDY, THEME_FOREST, THEME_OCEAN, THEME_VIOLETTE, THEME_USER_NIGHT
         )
         val STYLES = arrayOf(STYLE_MATERIAL, STYLE_HOLO, STYLE_ROUNDED)
 
@@ -190,6 +191,18 @@ private constructor(val themeId: Int, @JvmField val mStyleId: Int) {
                     ContextCompat.getColor(context, R.color.background_amoled_dark),
                     ContextCompat.getColor(context, R.color.key_text_color_lxx_dark),
                     ContextCompat.getColor(context, R.color.key_hint_letter_color_lxx_dark),
+                    keyboardBackground = backgroundImage
+                )
+                THEME_ASTRONOMY -> DefaultColors(
+                    themeStyle,
+                    hasBorders,
+                    ContextCompat.getColor(context, R.color.gesture_trail_color_lxx_dark), /* accent */
+                    ContextCompat.getColor(context, R.color.background_amoled_black), /* background */
+                    ContextCompat.getColor(context, R.color.background_amoled_dark), /* key background */
+                    ContextCompat.getColor(context, R.color.background_amoled_dark), /* functional key */
+                    ContextCompat.getColor(context, R.color.background_amoled_dark), /* spacebar */
+                    ContextCompat.getColor(context, R.color.key_text_color_lxx_astronomy), /* key text */
+                    ContextCompat.getColor(context, R.color.key_hint_letter_color_lxx_astronomy), /* suggestion text */
                     keyboardBackground = backgroundImage
                 )
                 THEME_BLUE_GRAY -> DefaultColors(
