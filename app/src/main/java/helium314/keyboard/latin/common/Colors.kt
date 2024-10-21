@@ -256,9 +256,7 @@ class DynamicColors(context: Context, override val themeStyle: String, override 
                 else if (!isNight) stateList(gesture, accent)
                 else stateList(doubleAdjustedAccent, accent)
 
-            spaceBarStateList =
-                if (!isNight) stateList(gesture, adjustedFunctionalKey)
-                else stateList(adjustedKeyBackground, spaceBar)
+            spaceBarStateList = keyStateList
         }
         keyTextFilter = colorFilter(keyText)
 
@@ -443,8 +441,7 @@ class DefaultColors (
             functionalKeyStateList = stateList(brightenOrDarken(functionalKey, true), functionalKey)
             actionKeyStateList = if (themeStyle == STYLE_HOLO) functionalKeyStateList
                 else stateList(brightenOrDarken(accent, true), accent)
-            spaceBarStateList = if (themeStyle == STYLE_HOLO) stateList(spaceBar, spaceBar)
-                else stateList(brightenOrDarken(spaceBar, true), spaceBar)
+            spaceBarStateList = keyStateList
         } else {
             // need to set color to background if key borders are disabled, or there will be ugly keys
             backgroundStateList = stateList(brightenOrDarken(background, true), background)
@@ -452,7 +449,7 @@ class DefaultColors (
             functionalKeyStateList = keyStateList
             actionKeyStateList = if (themeStyle == STYLE_HOLO) functionalKeyStateList
                 else stateList(brightenOrDarken(accent, true), accent)
-            spaceBarStateList = stateList(brightenOrDarken(spaceBar, true), spaceBar)
+            spaceBarStateList = keyStateList
         }
         keyTextFilter = colorFilter(keyText)
         actionKeyIconColorFilter = when {

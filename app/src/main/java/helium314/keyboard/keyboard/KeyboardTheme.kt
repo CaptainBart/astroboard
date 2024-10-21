@@ -196,11 +196,11 @@ private constructor(val themeId: Int, @JvmField val mStyleId: Int) {
                 THEME_ASTRONOMY -> DefaultColors(
                     themeStyle,
                     hasBorders,
-                    ContextCompat.getColor(context, R.color.gesture_trail_color_lxx_dark), /* accent */
+                    ContextCompat.getColor(context, R.color.key_accent_lxx_astronomy), /* accent */
                     ContextCompat.getColor(context, R.color.background_amoled_black), /* background */
-                    ContextCompat.getColor(context, R.color.background_amoled_dark), /* key background */
-                    ContextCompat.getColor(context, R.color.background_amoled_dark), /* functional key */
-                    ContextCompat.getColor(context, R.color.background_amoled_dark), /* spacebar */
+                    ContextCompat.getColor(context, R.color.background_amoled_black), /* key background */
+                    ContextCompat.getColor(context, R.color.background_amoled_black), /* functional key */
+                    ContextCompat.getColor(context, R.color.background_amoled_black), /* spacebar */
                     ContextCompat.getColor(context, R.color.key_text_color_lxx_astronomy), /* key text */
                     ContextCompat.getColor(context, R.color.key_hint_letter_color_lxx_astronomy), /* suggestion text */
                     keyboardBackground = backgroundImage
