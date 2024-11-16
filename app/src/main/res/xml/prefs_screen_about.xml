@@ -24,14 +24,7 @@
         android:summary="@string/gnu_gpl"
         android:icon="@drawable/ic_settings_about_license">
         <intent android:action="android.intent.action.VIEW"
-            android:data="https://github.com/Helium314/HeliBoard/blob/main/LICENSE-GPL-3" />
-    </Preference>
-
-    <Preference
-        android:title="@string/hidden_features_title"
-        android:summary="@string/hidden_features_summary"
-        android:key="hidden_features"
-        android:icon="@drawable/ic_settings_about_hidden_features">
+            android:data="https://github.com/CaptainBart/astroboard/blob/main/LICENSE-GPL-3" />
     </Preference>
 
     <Preference
@@ -39,7 +32,7 @@
         android:icon="@drawable/ic_settings_about_github">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://github.com/Helium314/HeliBoard" />
+            android:data="https://github.com/CaptainBart/astroboard" />
     </Preference>
 
     <Preference

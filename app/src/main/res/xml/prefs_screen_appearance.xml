@@ -16,7 +16,7 @@
         <ListPreference
             android:key="theme_style"
             android:title="@string/theme_style"
-            android:defaultValue="Material"
+            android:defaultValue="Holo"
             latin:singleLineTitle="false" />
 
         <ListPreference

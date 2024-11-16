@@ -54,10 +54,10 @@ public final class SettingsFragment extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(@Nullable Bundle bundle, @Nullable String s) {
         addPreferencesFromResource(R.xml.prefs);
-        if (!JniUtils.sHaveGestureLib) {
-            final Preference gesturePreference = findPreference(Settings.SCREEN_GESTURE);
-            getPreferenceScreen().removePreference(gesturePreference);
-        }
+        // if (!JniUtils.sHaveGestureLib) {
+        //     final Preference gesturePreference = findPreference(Settings.SCREEN_GESTURE);
+        //     getPreferenceScreen().removePreference(gesturePreference);
+        // }
         ExecutorUtils.getBackgroundExecutor(ExecutorUtils.KEYBOARD)
                 .execute(() -> DictionaryUtilsKt.cleanUnusedMainDicts(requireContext()));
     }

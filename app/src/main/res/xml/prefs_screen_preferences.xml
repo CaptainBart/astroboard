@@ -14,7 +14,7 @@
             android:key="show_hints"
             android:title="@string/show_hints"
             android:summary="@string/show_hints_summary"
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:persistent="true" />
 
         <Preference
@@ -69,7 +69,7 @@
             android:key="show_number_row"
             android:title="@string/number_row"
             android:summary="@string/number_row_summary"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:persistent="true" />
 
         <SwitchPreference

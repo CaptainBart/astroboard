@@ -175,11 +175,11 @@ private fun upgradesWhenComingFromOldAppName(context: Context) {
     // upgrade prefs
     val prefs = DeviceProtectedUtils.getSharedPreferences(context)
     if (prefs.all.containsKey("theme_variant")) {
-        prefs.edit().putString(Settings.PREF_THEME_COLORS, prefs.getString("theme_variant", "")).apply()
+        prefs.edit().putString(Settings.PREF_THEME_COLORS, prefs.getString("theme_variant", "astronomy")).apply()
         prefs.edit().remove("theme_variant").apply()
     }
     if (prefs.all.containsKey("theme_variant_night")) {
-        prefs.edit().putString(Settings.PREF_THEME_COLORS_NIGHT, prefs.getString("theme_variant_night", "")).apply()
+        prefs.edit().putString(Settings.PREF_THEME_COLORS_NIGHT, prefs.getString("theme_variant_night", "astronomy")).apply()
         prefs.edit().remove("theme_variant_night").apply()
     }
     prefs.all.toMap().forEach {

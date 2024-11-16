@@ -617,9 +617,9 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
         if (ColorsSettingsFragment.Companion.getForceOppositeTheme()) isNight = !isNight;
         else isNight = isNight && readDayNightPref(prefs, context.getResources());
         final String themeColors = (isNight)
-                ? prefs.getString(Settings.PREF_THEME_COLORS_NIGHT, KeyboardTheme.THEME_DARK)
-                : prefs.getString(Settings.PREF_THEME_COLORS, KeyboardTheme.THEME_LIGHT);
-        final String themeStyle = prefs.getString(Settings.PREF_THEME_STYLE, KeyboardTheme.STYLE_MATERIAL);
+                ? prefs.getString(Settings.PREF_THEME_COLORS_NIGHT, KeyboardTheme.THEME_ASTRONOMY)
+                : prefs.getString(Settings.PREF_THEME_COLORS, KeyboardTheme.THEME_ASTRONOMY);
+        final String themeStyle = prefs.getString(Settings.PREF_THEME_STYLE, KeyboardTheme.STYLE_HOLO);
 
         return KeyboardTheme.getThemeColors(themeColors, themeStyle, context, prefs, isNight);
     }
