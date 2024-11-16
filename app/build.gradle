@@ -25,6 +25,11 @@ android {
             debuggable false
             jniDebuggable false
             renderscriptDebuggable false
+
+            storeFile file("android-keys.jks")
+            storePassword System.getenv("SIGNING_STORE_PASSWORD")
+            keyAlias System.getenv("SIGNING_KEY_ALIAS")
+            keyPassword System.getenv("SIGNING_KEY_PASSWORD")
         }
         nouserlib { // same as release, but does not allow the user to provide a library
             minifyEnabled true
