@@ -84,7 +84,7 @@
     <string name="subtype_arabic_pc" translatable="false">%s (PC)</string>
 
     <!-- App slogan-->
-    <string name="app_slogan" translatable="false">Joepie.</string>
+    <string name="app_slogan" translatable="false">The on-screen keyboard app designed with your nocturnal adventures in mind.</string>
     <!-- default value for auto-day/night setting -->
     <bool name="day_night_default">false</bool>
     <string-array name="language_switch_key_values">
