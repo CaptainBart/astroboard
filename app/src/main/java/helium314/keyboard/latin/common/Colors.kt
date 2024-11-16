@@ -32,6 +32,7 @@ import helium314.keyboard.latin.R
 import helium314.keyboard.latin.settings.Settings
 import helium314.keyboard.latin.utils.adjustLuminosityAndKeepAlpha
 import helium314.keyboard.latin.utils.brighten
+import helium314.keyboard.latin.utils.redden
 import helium314.keyboard.latin.utils.brightenOrDarken
 import helium314.keyboard.latin.utils.darken
 import helium314.keyboard.latin.utils.isBrightColor
@@ -187,8 +188,8 @@ class DynamicColors(context: Context, override val themeStyle: String, override 
         adjustedKeyText = brightenOrDarken(keyText, true)
 
         if (isDarkColor(background)) {
-            adjustedBackground = brighten(background)
-            doubleAdjustedBackground = brighten(adjustedBackground)
+            adjustedBackground = redden(background)
+            doubleAdjustedBackground = redden(adjustedBackground)
         } else {
             adjustedBackground = darken(background)
             doubleAdjustedBackground = darken(adjustedBackground)
@@ -401,8 +402,8 @@ class DefaultColors (
 
     init {
         if (isDarkColor(background)) {
-            adjustedBackground = brighten(background)
-            doubleAdjustedBackground = brighten(adjustedBackground)
+            adjustedBackground = redden(background)
+            doubleAdjustedBackground = redden(adjustedBackground)
         } else {
             adjustedBackground = darken(background)
             doubleAdjustedBackground = darken(adjustedBackground)

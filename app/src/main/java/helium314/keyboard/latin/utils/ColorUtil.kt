@@ -56,3 +56,15 @@ fun brighten(@ColorInt color: Int) =
 
 @ColorInt
 fun darken(@ColorInt color: Int) = adjustLuminosityAndKeepAlpha(color, -0.06f)
+
+@ColorInt
+fun redden(@ColorInt color: Int): Int {
+    var red = Color.red(color)
+    Log.d("colorutil", "red:$red")
+    return Color.argb(
+        Color.alpha(color),
+        red + 24,
+        Color.green(color),
+        Color.blue(color)
+    )
+}
