@@ -18,7 +18,7 @@ android {
         proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
 
-    singingConfigs {
+    signingConfigs {
         release {
             storeFile file("android-keys.jks")
             storePassword System.getenv("SIGNING_STORE_PASSWORD")
