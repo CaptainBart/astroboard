@@ -48,10 +48,10 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: APK
-          path: build/outputs/apk/release/*.apk
+          path: app/build/outputs/apk/release/*.apk
 
       - uses: actions/upload-artifact@v3
         with:
           name: Bundle
-          path: build/outputs/bundle/release/*.aab
+          path: app/build/outputs/bundle/release/*.aab
 
